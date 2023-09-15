@@ -1,14 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --first-color: #0ca6d3;
+    --second-color: #df71a9;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: aquamarine;
+    background-color: var(--second-color);
 }
 
 ul {
@@ -25,4 +36,70 @@ ul a {
 
 img {
     width: 100px;
+}
+
+
+/*Hero*/
+.hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    width: 80%;
+    height: 25rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+.banner-content-1 {
+    width: 55%;
+    height: 80%;
+}
+
+.banner-content-2 {
+    width: 40%;
+    height: 80%;
+}
+
+h1 {
+    margin-bottom: 2.5rem;
+}
+
+.access-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.btn-1, .btn-2 {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 4px;
+}
+
+.btn-1 {
+    background-color: var(--second-color);
+    border: none;
+}
+
+.btn-2 {
+    border: 1px solid var(--second-color);
+}
+
+.banner-content-2 img {
+    width: 25rem;
+    border-radius: 4px;
+}
+
+.about-content {
+    width: 70%;
+    height: 25rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5rem;
 }
